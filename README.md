@@ -9,18 +9,18 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome:Gabriel Moreira Bonifácio de Azevedo
+- Matricula:907460
+- Proposta de projeto escolhida:Proposta 4. Coleções e Itens
+- Breve descrição sobre seu projeto:Um site que tem uma coleçao de jogos e consoles, e uma nota media de usuarios de cada um.
 
 ## Print da versão responsiva com CSS puro [DESKTOP]
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Print do Desktop](./img/Print-Desktop.png)
 
 ## Print da versão responsiva com CSS puro [MOBILE] (*)
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Print do Mobile](./img/Print-Mobile.png)
 
 
 (*) Utilize as ferramentas do desenvolvedor do seu navegador para colocar no modo reponsivo, escolha um celular qualquer e recarregue a página antes de tirar o print. 
