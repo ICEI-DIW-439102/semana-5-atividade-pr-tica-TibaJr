@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+:root {
+    --bs-body-font-family: "Inter", sans-serif;
+    --panel: #f4f4f4;
+    --ink: #181818;
+    --accent: #2f80ed;
+    --good: #00ce7a;
+    --mixed: #f7b72d;
+}
+
+body {
+    background: linear-gradient(180deg, #ebebeb, #dfdfdf);
+}
+
+.card {
+    background: var(--panel);
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.05rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.88rem;
+    line-height: 1.4;
+}
+
+.badge {
+    font-weight: 800;
+}
+
+.badge.bg-success {
+    background-color: var(--good) !important;
+    color: #173021;
+}
+
+.badge.bg-warning {
+    background-color: var(--mixed) !important;
+    color: #2c260d;
+}
+
+.navbar {
+    padding: 0.75rem 1rem;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.15rem;
+}
+
+.btn-primary {
+    background-color: var(--accent);
+    border-color: #1d60b8;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.2);
+    background-color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.02rem;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 0.7rem;
+    }
+
+    .navbar-brand {
+        font-size: 0.95rem;
+    }
+}

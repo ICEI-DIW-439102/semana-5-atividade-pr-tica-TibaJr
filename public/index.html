@@ -4,184 +4,206 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Game Wardrobe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="page-shell">
-        <header class="topbar">
-            <a class="brand" href="#" aria-label="My Game Wardrobe">
-                <span class="brand-mark"></span>
-                <span>My Game Wardrobe</span>
-            </a>
-
-            <div class="topbar-right">
-                <a class="add-game" href="#" aria-label="Adicionar jogo">
-                    Add Game
-                    <span class="plus">+</span>
+<body class="bg-light">
+    <div class="d-flex flex-column min-vh-100">
+        <header class="navbar navbar-dark bg-dark border-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <span class="brand-mark border border-primary rounded-circle d-inline-block" style="width: 26px; height: 26px;"></span>
+                    <span class="fw-bold">My Game Wardrobe</span>
                 </a>
 
-                <nav class="main-nav" aria-label="Navegação principal">
-                    <a href="#">Home</a>
-                    <a href="#">All collections</a>
-                    <a href="#">gabriel.moreira</a>
-                </nav>
+                <div class="d-flex align-items-center gap-4 flex-wrap justify-content-end">
+                    <a class="btn btn-primary btn-lg d-flex align-items-center gap-2 fw-bold" href="#" aria-label="Adicionar jogo">
+                        Add Game
+                        <span class="fw-bold">+</span>
+                    </a>
 
-                <button class="avatar" type="button" aria-label="Perfil do usuário">
-                    GM
-                </button>
+                    <nav class="navbar-nav flex-row gap-3 d-none d-md-flex" aria-label="Navegação principal">
+                        <a class="nav-link text-white fw-bold" href="#">Home</a>
+                        <a class="nav-link text-white fw-bold" href="#">All collections</a>
+                        <a class="nav-link text-white-50 fw-bold" href="#">gabriel.moreira</a>
+                    </nav>
+
+                    <button class="btn btn-outline-secondary rounded-circle p-2 fw-bold" type="button" aria-label="Perfil do usuário" style="width: 42px; height: 42px;">
+                        GM
+                    </button>
+                </div>
             </div>
         </header>
 
-        <main class="content">
-            <section class="section-block">
-                <div class="section-head">
-                    <h2>Most Collected Games</h2>
-                    <div class="section-controls" aria-hidden="true">
-                        <span>&larr;</span>
-                        <span>&rarr;</span>
+        <main class="flex-grow-1 p-4">
+            <div class="container-fluid">
+                <section class="mb-5">
+                    <h2 class="h3 mb-4 fw-bold">Most Collected Games</h2>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <article class="card h-100">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvNstmBOLjAD6WqJftVQh--aEmTEIqvy6-VQ&s" class="card-img-top" alt="Hollow Knight">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Hollow Knight</h3>
+                                    <p class="card-text small text-muted mb-auto">
+                                        Type: Game<br>Release Year: 2017
+                                    </p>
+                                </div>
+                                <div class="position-absolute bottom-0 end-0 m-2">
+                                    <span class="badge bg-success p-3" style="font-size: 1.25rem;">86</span>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <article class="card h-100">
+                                <img src="https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000012858/f4d4fd20c956621c4a342a8cade2e366f0e3cd43765bb52eccd0fea32b1606ce" class="card-img-top" alt="Resident Evil 4">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Resident Evil 4</h3>
+                                    <p class="card-text small text-muted mb-auto">
+                                        Type: Game<br>Release Year: 2005
+                                    </p>
+                                </div>
+                                <div class="position-absolute bottom-0 end-0 m-2">
+                                    <span class="badge bg-success p-3" style="font-size: 1.25rem;">92</span>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <article class="card h-100">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMZTVkWI2ZDmUjSVzBWqvXdQF8SzaFzps5QA&s" class="card-img-top" alt="Nier: Automata">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Nier: Automata</h3>
+                                    <p class="card-text small text-muted mb-auto">
+                                        Type: Game<br>Release Year: 2017
+                                    </p>
+                                </div>
+                                <div class="position-absolute bottom-0 end-0 m-2">
+                                    <span class="badge bg-success p-3" style="font-size: 1.25rem;">94</span>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <article class="card h-100">
+                                <img src="https://i0.wp.com/hqcovers.net/wp-content/uploads/2013/04/sotc_01.jpg?w=796&h=796&crop=1&ssl=1" class="card-img-top" alt="Shadow of the Colossus">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Shadow of the Colossus</h3>
+                                    <p class="card-text small text-muted mb-auto">
+                                        Type: Game<br>Release Year: 2005
+                                    </p>
+                                </div>
+                                <div class="position-absolute bottom-0 end-0 m-2">
+                                    <span class="badge bg-success p-3" style="font-size: 1.25rem;">90</span>
+                                </div>
+                            </article>
+                        </div>
                     </div>
-                </div>
+                    <a class="float-end mt-3 text-decoration-none small fw-bold text-dark" href="#">show more</a>
+                </section>
 
-                <div class="cards-grid">
-                    <article class="collect-card">
-                        <h3>Hollow Knight</h3>
-                        <a class="card-banner-link" href="#" aria-label="Abrir detalhes de Hollow Knight">
-                            <div class="media-placeholder" role="img" aria-label="Imagem do jogo Hollow Knight" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvNstmBOLjAD6WqJftVQh--aEmTEIqvy6-VQ&s');"></div>
-                        </a>
-                        <div class="card-info">
-                            <p>Type: Game</p>
-                            <p>Release Year: 2017</p>
+                <section class="mb-5">
+                    <h2 class="h3 mb-4 fw-bold">Most Collected Consoles</h2>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <article class="card h-100">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJvGrK9f2W_mRDkRxGr2OVIoTUzPdqNipXOg&s" class="card-img-top" alt="PlayStation 2">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">PlayStation 2</h3>
+                                    <p class="card-text small text-muted mb-auto">
+                                        Type: Console<br>Release Year: 2000
+                                    </p>
+                                </div>
+                                <div class="position-absolute bottom-0 end-0 m-2">
+                                    <span class="badge bg-success p-3" style="font-size: 1.25rem;">86</span>
+                                </div>
+                            </article>
                         </div>
-                        <strong class="score-pill score-good">86</strong>
-                    </article>
 
-                    <article class="collect-card">
-                        <h3>Resident Evil 4</h3>
-                        <a class="card-banner-link" href="#" aria-label="Abrir detalhes de Resident Evil 4">
-                            <div class="media-placeholder" role="img" aria-label="Imagem do jogo Resident Evil 4" style="background-image: url('https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000012858/f4d4fd20c956621c4a342a8cade2e366f0e3cd43765bb52eccd0fea32b1606ce');"></div>
-                        </a>
-                        <div class="card-info">
-                            <p>Type: Game</p>
-                            <p>Release Year: 2005</p>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <article class="card h-100">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDK7hCDTDoBPFRVsNt5Cb9ggDQh4-FcW2dJw&s" class="card-img-top" alt="Nintendo DS">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Nintendo DS</h3>
+                                    <p class="card-text small text-muted mb-auto">
+                                        Type: Console<br>Release Year: 2004
+                                    </p>
+                                </div>
+                                <div class="position-absolute bottom-0 end-0 m-2">
+                                    <span class="badge bg-warning p-3" style="font-size: 1.25rem;">72</span>
+                                </div>
+                            </article>
                         </div>
-                        <strong class="score-pill score-good">92</strong>
-                    </article>
 
-                    <article class="collect-card">
-                        <h3>Nier: Automata</h3>
-                        <a class="card-banner-link" href="#" aria-label="Abrir detalhes de Nier: Automata">
-                            <div class="media-placeholder" role="img" aria-label="Imagem do jogo Nier: Automata" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMZTVkWI2ZDmUjSVzBWqvXdQF8SzaFzps5QA&s');"></div>
-                        </a>
-                        <div class="card-info">
-                            <p>Type: Game</p>
-                            <p>Release Year: 2017</p>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <article class="card h-100">
+                                <img src="data:image/png;base64,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" class="card-img-top" alt="Xbox 360">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Xbox 360</h3>
+                                    <p class="card-text small text-muted mb-auto">
+                                        Type: Console<br>Release Year: 2005
+                                    </p>
+                                </div>
+                                <div class="position-absolute bottom-0 end-0 m-2">
+                                    <span class="badge bg-warning p-3" style="font-size: 1.25rem;">67</span>
+                                </div>
+                            </article>
                         </div>
-                        <strong class="score-pill score-good">94</strong>
-                    </article>
 
-                    <article class="collect-card">
-                        <h3>Shadow of the Colossus</h3>
-                        <a class="card-banner-link" href="#" aria-label="Abrir detalhes de Shadow of the Colossus">
-                            <div class="media-placeholder" role="img" aria-label="Imagem do jogo Shadow of the Colossus" style="background-image: url('https://i0.wp.com/hqcovers.net/wp-content/uploads/2013/04/sotc_01.jpg?w=796&h=796&crop=1&ssl=1');"></div>
-                        </a>
-                        <div class="card-info">
-                            <p>Type: Game</p>
-                            <p>Release Year: 2005</p>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <article class="card h-100">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWUpROoUrFMDVq3M_aKa8JzgsdA6GnGcEpWQ&s" class="card-img-top" alt="PlayStation 4">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">PlayStation 4</h3>
+                                    <p class="card-text small text-muted mb-auto">
+                                        Type: Console<br>Release Year: 2013
+                                    </p>
+                                </div>
+                                <div class="position-absolute bottom-0 end-0 m-2">
+                                    <span class="badge bg-success p-3" style="font-size: 1.25rem;">88</span>
+                                </div>
+                            </article>
                         </div>
-                        <strong class="score-pill score-good">90</strong>
-                    </article>
-                </div>
-
-                <a class="show-more" href="#">show more</a>
-            </section>
-
-            <section class="section-block">
-                <div class="section-head">
-                    <h2>Most Collected Consoles</h2>
-                    <div class="section-controls" aria-hidden="true">
-                        <span>&larr;</span>
-                        <span>&rarr;</span>
                     </div>
-                </div>
+                    <a class="float-end mt-3 text-decoration-none small fw-bold text-dark" href="#">show more</a>
+                </section>
 
-                <div class="cards-grid">
-                    <article class="collect-card">
-                        <h3>PlayStation 2</h3>
-                        <div class="media-placeholder" role="img" aria-label="Imagem do console PlayStation 2" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJvGrK9f2W_mRDkRxGr2OVIoTUzPdqNipXOg&s');"></div>
-                        <div class="card-info">
-                            <p>Type: Console</p>
-                            <p>Release Year: 2000</p>
+                <section class="mb-5">
+                    <h2 class="h3 mb-4 fw-bold">Most Liked Reviews</h2>
+                    <article class="card border-0">
+                        <div class="row g-0">
+                            <div class="col-12 col-md-5">
+                                <img src="https://static.wikia.nocookie.net/logopedia/images/e/e9/Final_Fantasy_VII_%28Alt%29.png/revision/latest/scale-to-width-down/1200?cb=20240114050707" class="card-img w-100" alt="Final Fantasy VII" style="object-fit: contain; height: 300px; background-color: #101010;">
+                            </div>
+                            <div class="col-12 col-md-7">
+                                <div class="card-body">
+                                    <h3 class="card-title fw-bold">Final Fantasy VII</h3>
+                                    <p class="card-text text-muted">
+                                        Uma aventura marcante com personagens iconicos, trilha inesquecivel e um mundo rico em detalhes. Mesmo anos depois, a jornada de Cloud e seu grupo segue relevante para quem gosta de RPG com historia forte.
+                                    </p>
+                                    <div class="position-absolute bottom-0 end-0 m-3">
+                                        <span class="badge bg-success p-3" style="font-size: 1.5rem;">86</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <strong class="score-pill score-good">86</strong>
                     </article>
-
-                    <article class="collect-card">
-                        <h3>Nintendo DS</h3>
-                        <div class="media-placeholder" role="img" aria-label="Imagem do console Nintendo DS" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDK7hCDTDoBPFRVsNt5Cb9ggDQh4-FcW2dJw&s');"></div>
-                        <div class="card-info">
-                            <p>Type: Console</p>
-                            <p>Release Year: 2004</p>
-                        </div>
-                        <strong class="score-pill score-mixed">72</strong>
-                    </article>
-
-                    <article class="collect-card">
-                        <h3>Xbox 360</h3>
-                        <div class="media-placeholder" role="img" aria-label="Imagem do console Xbox 360" style="background-image: url('data:image/png;base64,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');"></div>
-                        <div class="card-info">
-                            <p>Type: Console</p>
-                            <p>Release Year: 2005</p>
-                        </div>
-                        <strong class="score-pill score-mixed">67</strong>
-                    </article>
-
-                    <article class="collect-card">
-                        <h3>PlayStation 4</h3>
-                        <div class="media-placeholder" role="img" aria-label="Imagem do console PlayStation 4" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWUpROoUrFMDVq3M_aKa8JzgsdA6GnGcEpWQ&s');"></div>
-                        <div class="card-info">
-                            <p>Type: Console</p>
-                            <p>Release Year: 2013</p>
-                        </div>
-                        <strong class="score-pill score-good">88</strong>
-                    </article>
-                </div>
-
-                <a class="show-more" href="#">show more</a>
-            </section>
-
-            <section class="section-block">
-                <div class="section-head">
-                    <h2>Most Liked Reviews</h2>
-                    <div class="section-controls" aria-hidden="true">
-                        <span>&larr;</span>
-                        <span>&rarr;</span>
-                    </div>
-                </div>
-
-                <article class="review-highlight">
-                    <div class="media-placeholder media-large" role="img" aria-label="Imagem destacada da review de Final Fantasy VII" style="background-image: url('https://static.wikia.nocookie.net/logopedia/images/e/e9/Final_Fantasy_VII_%28Alt%29.png/revision/latest/scale-to-width-down/1200?cb=20240114050707');"></div>
-
-                    <div class="review-copy">
-                        <h3>Final Fantasy VII</h3>
-                        <p>
-                            Uma aventura marcante com personagens iconicos, trilha inesquecivel e
-                            um mundo rico em detalhes. Mesmo anos depois, a jornada de Cloud e seu
-                            grupo segue relevante para quem gosta de RPG com historia forte.
-                        </p>
-                    </div>
-
-                    <strong class="score-pill score-good review-score">86</strong>
-                </article>
-            </section>
+                </section>
+            </div>
         </main>
 
-        <footer class="site-footer">
-            <div class="site-footer-inner">
-                <span>Gabriel Moreira 2026</span>
-                <span class="footer-separator" aria-hidden="true">|</span>
-                <span>Todos direitos reservados</span>
+        <footer class="bg-dark text-white mt-5 py-3 border-top">
+            <div class="container-fluid text-center">
+                <small>
+                    <span>Gabriel Moreira 2026</span>
+                    <span class="mx-2">|</span>
+                    <span>Todos direitos reservados</span>
+                </small>
             </div>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
